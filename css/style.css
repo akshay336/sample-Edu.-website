@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    margin: 4px;
+    width: 24%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+
+}
+.navlist{
+    width: 70%;
+    
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+  list-style: none;
+  padding: 12px 18px;
+  
+}
+
+.navlist li a{
+  text-decoration: none;
+  color: white;
+}
+.navlist li a:hover{
+    color:goldenrod
+  }
+.rightnav{
+    
+    width: 30%;
+    text-align: right;
+}
+.rightnav input{
+    height: 18px;
+    width: 181px;
+    border-radius: 7px;
+}
+
+#search{
+   padding: 5px;
+   font-size: 17px;
+   border: 2px solid gray;
+   border-radius: 9px;
+}
+#btnbtn-sm{ 
+    padding:0px 1px;
+    font-size: 12px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/wallhaven-ym56zg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.first-section{
+    height: 95vh;
+}
+  .box-main{
+      width: 50%;
+      height: 75vh;
+      margin: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-half{
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.second-half{
+    width: 30%;
+}
+.second-half img{
+    width: 167%;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+
+}
+.text-big{
+    font-size: 29px;
+}
+
+.text-small{
+    font-size: 18px;
+    margin-inline-end: 13px;
+    
+}
+.button{
+    /* margin: 2px 2px; */
+    margin: 11px 0px;
+}
+.buttonbtn{
+    margin: 0px 7px;
+
+}
+.btn{
+    margin: 0px 1px;
+    padding: 2px 2px;
+    margin: 7px opx;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: font-family:'Cinzel', serif ;
+}
+.btn-sm{
+    margin-right: 12px;
+    padding: 0px 1px;
+    vertical-align: middle;
+}
+/* .section background firstsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.search{
+    height: 20px;
+    border-radius: 10px;
+}
+.burger{
+   position: absolute;
+   display: none;
+   cursor: pointer;
+   right: 5%;
+   top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 4px ;
+}
+.section{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Cinzel', serif;
+}
+.paras{
+    padding: 0px 35px;
+}
+.section-left{
+    flex-direction: row-reverse;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    
+}
+.subtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thambnail img{
+    width: 240px;
+     border: 2px solid black;
+    border-radius: 25px;
+
+}
+  .contact{
+    background-color: whitesmoke;
+     height: 100vh;
+  }
+  .text-center{
+      text-align: center ;
+      padding: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 29px;
+  }
+  .form{
+      max-width: 736px;
+      margin: auto;
+  }
+  .form-input{
+      width: 100%;
+      padding: 4px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 17px 0px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .btn-dark{
+      cursor: pointer;
+      color: black;
+      border: 2px solid gray;
+      border-radius: 4px;
+      font-size: 11px;
+    padding: 1px;
+}
+  
+  .text-footer{
+    text-align: center ;
+    padding: 30px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+     /* @media only screen  and (max-width:1400px){
+         .navlist{
+             flex-direction: column;
+         }
+         .navbar{
+             flex-direction: column;
+             height: 470px;
+             transition: all 0.7s ease-out;
+         }
+         .box-main{
+             flex-direction: column-reverse;
+             max-width: 100%;
+         }
+         .rightnav{
+             text-align: center;
+         }
+         #search{
+             width: 100%;
+         }
+         .burger{
+             display: block;
+         }
+         .h-nav{
+         height: 72px;
+         }
+         .v-class{
+             opacity: 0;
+         } */
+         
+         
+         }
+     
